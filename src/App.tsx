@@ -23,7 +23,7 @@ import {
   ServiceItem,
   MasterItem,
 } from './data/studioData';
-import { StudioImage } from './components/StudioImage';
+import { StudioImage, resolvePublicAssetUrl } from './components/StudioImage';
 import { BookingSection } from './components/BookingSection';
 
 export default function App() {
@@ -854,7 +854,7 @@ export default function App() {
 
             <div className="bg-[#FAF8F5] max-h-[70vh] flex items-center justify-center overflow-hidden">
               <img
-                src={GALLERY_ITEMS[lightboxIndex].src}
+                src={resolvePublicAssetUrl(GALLERY_ITEMS[lightboxIndex].src)}
                 alt={GALLERY_ITEMS[lightboxIndex].alt}
                 referrerPolicy="no-referrer"
                 className="max-h-[68vh] w-auto object-contain"

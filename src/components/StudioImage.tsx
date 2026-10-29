@@ -8,6 +8,24 @@ interface StudioImageProps {
   fallbackLabel?: string;
 }
 
+export function resolvePublicAssetUrl(src: string): string {
+  if (!src) return src;
+  if (
+    src.startsWith('http://') ||
+    src.startsWith('https://') ||
+    src.startsWith('data:')
+  ) {
+    return src;
+  }
+  const cleanPath = src.replace(/^\/+/, '');
+  const baseUrl = import.meta.env.BASE_URL || './';
+  if (baseUrl === './' || baseUrl === '.') {
+    return `./${cleanPath}`;
+  }
+  const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+  return `${normalizedBase}${cleanPath}`;
+}
+
 export const StudioImage: React.FC<StudioImageProps> = ({
   src,
   alt,
@@ -16,6 +34,7 @@ export const StudioImage: React.FC<StudioImageProps> = ({
   fallbackLabel,
 }) => {
   const [hasError, setHasError] = useState(false);
+  const resolvedSrc = resolvePublicAssetUrl(src);
 
   if (hasError) {
     return (
@@ -44,7 +63,7 @@ export const StudioImage: React.FC<StudioImageProps> = ({
   return (
     <div className={`overflow-hidden bg-[#FAF8F5] ${className}`}>
       <img
-        src={src}
+        src={resolvedSrc}
         alt={alt}
         referrerPolicy="no-referrer"
         onError={() => setHasError(true)}

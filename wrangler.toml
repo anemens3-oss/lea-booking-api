@@ -6,9 +6,8 @@ main = "worker/index.ts"
 compatibility_date = "2025-02-01"
 
 [vars]
-# ЗАМЕНИТЕ НА ТОЧНЫЙ ORIGIN ВАШЕГО ОПУБЛИКОВАННОГО САЙТА НА GITHUB PAGES:
-# Например: "https://ivanov.github.io"
-ALLOWED_ORIGIN = "https://<YOUR_GITHUB_USERNAME>.github.io"
+# Точный origin опубликованного сайта на GitHub Pages:
+ALLOWED_ORIGIN = "https://anemens3-oss.github.io"
 
 # Временная зона салона красоты (используется для проверки прошедшего времени)
 SALON_TIMEZONE = "Europe/Moscow"
