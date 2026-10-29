@@ -1,0 +1,6 @@
+{
+  "name": "LÉA — Студия красоты",
+  "description": "Белый, воздушный сайт камерной студии красоты LÉA: маникюр, оформление бровей и бережный уход за лицом в спокойной атмосфере.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

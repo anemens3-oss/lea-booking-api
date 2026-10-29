@@ -1,0 +1,30 @@
+# ============================================================================
+# Конфигурация Cloudflare Worker для системы онлайн-записи студии красоты LÉA
+# ============================================================================
+name = "lea-booking-worker"
+main = "worker/index.ts"
+compatibility_date = "2025-02-01"
+
+[vars]
+# ЗАМЕНИТЕ НА ТОЧНЫЙ ORIGIN ВАШЕГО ОПУБЛИКОВАННОГО САЙТА НА GITHUB PAGES:
+# Например: "https://ivanov.github.io"
+ALLOWED_ORIGIN = "https://<YOUR_GITHUB_USERNAME>.github.io"
+
+# Временная зона салона красоты (используется для проверки прошедшего времени)
+SALON_TIMEZONE = "Europe/Moscow"
+
+# Привязка базы данных Cloudflare D1
+# Замените database_id на реальный ID, полученный после команды:
+# npx wrangler d1 create lea-booking-db
+[[d1_databases]]
+binding = "DB"
+database_name = "lea-booking-db"
+database_id = "<YOUR_D1_DATABASE_ID>"
+migrations_dir = "migrations"
+
+# ============================================================================
+# Секреты (НЕ ХРАНИТЕ ИХ В ЭТОМ ФАЙЛЕ!):
+# Устанавливаются через терминал командами:
+#   npx wrangler secret put TELEGRAM_BOT_TOKEN
+#   npx wrangler secret put TELEGRAM_CHAT_ID
+# ============================================================================

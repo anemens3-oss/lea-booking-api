@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" width="720" height="900">
+  <defs>
+    <linearGradient id="annaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE9E1" />
+    </linearGradient>
+    <linearGradient id="annaSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8EDE5" />
+      <stop offset="100%" stop-color="#E5CFC0" />
+    </linearGradient>
+    <linearGradient id="linenApron" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4EFE8" />
+      <stop offset="100%" stop-color="#E6DDD2" />
+    </linearGradient>
+    <filter id="portraitShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="720" height="900" fill="url(#annaBg)" />
+  <circle cx="560" cy="200" r="240" fill="#FFFFFF" opacity="0.85" />
+
+  <!-- Editorial studio portrait of Anna -->
+  <g filter="url(#portraitShadow)">
+    <!-- Hair back -->
+    <path d="M235,310 C225,175 495,175 485,310 C495,430 475,510 445,545 L275,545 C245,510 225,430 235,310 Z" fill="#4A3E35" />
+    <!-- Shoulders & oatmeal linen shirt -->
+    <path d="M115,900 C125,685 215,595 360,595 C505,595 595,685 605,900 Z" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <path d="M210,900 L245,620 L475,620 L510,900 Z" fill="url(#linenApron)" />
+    <!-- Neck -->
+    <rect x="322" y="475" width="76" height="135" rx="34" fill="url(#annaSkin)" />
+    <!-- Face -->
+    <path d="M258,325 C258,225 462,225 462,325 C462,435 415,510 360,510 C305,510 258,435 258,325 Z" fill="url(#annaSkin)" />
+    <!-- Soft parted hair framing face -->
+    <path d="M255,335 C255,235 355,215 360,248 C365,215 465,235 465,335 C450,275 405,258 360,262 C315,258 270,275 255,335 Z" fill="#4A3E35" />
+    <!-- Calm warm expression -->
+    <path d="M298,342 Q320,332 340,340" stroke="#4A3E35" stroke-width="2.4" fill="none" stroke-linecap="round" />
+    <path d="M380,340 Q400,332 422,342" stroke="#4A3E35" stroke-width="2.4" fill="none" stroke-linecap="round" />
+    <circle cx="320" cy="364" r="4.5" fill="#3B322C" />
+    <circle cx="400" cy="364" r="4.5" fill="#3B322C" />
+    <path d="M360,368 L356,406 Q360,412 366,408" stroke="#CCAFA0" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M336,442 Q360,456 384,442" stroke="#C59B8C" stroke-width="2.6" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

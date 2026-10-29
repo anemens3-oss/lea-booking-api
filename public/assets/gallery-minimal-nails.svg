@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="nailArtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE8E0" />
+    </linearGradient>
+    <linearGradient id="fingerSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7EBE2" />
+      <stop offset="100%" stop-color="#E3CCB9" />
+    </linearGradient>
+    <linearGradient id="frenchBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF3EC" />
+      <stop offset="100%" stop-color="#EEDFD3" />
+    </linearGradient>
+    <filter id="cardDrop" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#nailArtBg)" />
+
+  <!-- Organic ceramic dish -->
+  <g filter="url(#cardDrop)">
+    <path d="M150,410 C130,240 280,150 440,165 C610,180 685,310 660,465 C635,620 480,670 320,645 C175,622 170,550 150,410 Z" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="2" />
+    <path d="M190,410 C175,270 300,195 435,208 C575,220 638,328 616,455 C595,582 468,622 335,602 C215,584 205,525 190,410 Z" fill="#FAF8F5" stroke="#F0ECE6" stroke-width="1.5" />
+  </g>
+
+  <!-- Minimalist Micro-French manicure fingers resting on dish -->
+  <g filter="url(#cardDrop)">
+    <!-- Finger 1 -->
+    <path d="M800,250 C665,280 545,320 440,362 C412,374 420,412 452,408 C565,392 685,355 800,330 Z" fill="url(#fingerSkin)" />
+    <g transform="translate(446, 384) rotate(-18)">
+      <rect x="-26" y="-14" width="48" height="28" rx="14" fill="url(#frenchBase)" stroke="#E3D2C4" stroke-width="1" />
+      <!-- Micro-French ivory tip arc -->
+      <path d="M-19,-11 C-27,-4 -27,4 -19,11" stroke="#FFFFFF" stroke-width="3.2" fill="none" stroke-linecap="round" />
+      <path d="M-12,-8 Q4,-10 15,-6" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <!-- Finger 2 -->
+    <path d="M800,350 C650,382 515,422 405,465 C376,476 385,515 418,512 C540,494 675,455 800,430 Z" fill="url(#fingerSkin)" />
+    <g transform="translate(412, 487) rotate(-17)">
+      <rect x="-27" y="-14.5" width="50" height="29" rx="14.5" fill="url(#frenchBase)" stroke="#E3D2C4" stroke-width="1" />
+      <path d="M-20,-11.5 C-28,-4 -28,4 -20,11.5" stroke="#FFFFFF" stroke-width="3.4" fill="none" stroke-linecap="round" />
+      <path d="M-12,-8 Q4,-10 16,-6" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <!-- Finger 3 -->
+    <path d="M800,450 C670,480 550,518 450,556 C424,566 432,602 462,598 C572,582 688,546 800,522 Z" fill="url(#fingerSkin)" />
+    <g transform="translate(456, 576) rotate(-16)">
+      <rect x="-24" y="-13" width="45" height="26" rx="13" fill="url(#frenchBase)" stroke="#E3D2C4" stroke-width="1" />
+      <path d="M-17,-10 C-24,-3.5 -24,3.5 -17,10" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" />
+      <path d="M-10,-7 Q4,-9 14,-5" stroke="#FFFFFF" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.8" />
+    </g>
+  </g>
+</svg>

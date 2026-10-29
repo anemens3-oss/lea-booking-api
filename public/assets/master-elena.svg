@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" width="720" height="900">
+  <defs>
+    <linearGradient id="elenaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE9E2" />
+    </linearGradient>
+    <linearGradient id="elenaSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8EDE4" />
+      <stop offset="100%" stop-color="#E4CEBF" />
+    </linearGradient>
+    <filter id="elenaShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="720" height="900" fill="url(#elenaBg)" />
+  <circle cx="520" cy="240" r="240" fill="#FFFFFF" opacity="0.85" />
+
+  <!-- Editorial studio portrait of Elena -->
+  <g filter="url(#elenaShadow)">
+    <!-- Soft blonde-brown waves -->
+    <path d="M228,320 C215,175 505,175 492,320 C505,455 488,545 455,585 L265,585 C232,545 215,455 228,320 Z" fill="#8C735B" />
+    <!-- Crisp white esthetician tunic -->
+    <path d="M115,900 C128,680 218,592 360,592 C502,592 592,680 605,900 Z" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <path d="M295,595 L360,695 L425,595" fill="none" stroke="#EAE6E1" stroke-width="2" />
+    <!-- Neck -->
+    <rect x="322" y="475" width="76" height="135" rx="34" fill="url(#elenaSkin)" />
+    <!-- Face -->
+    <path d="M260,326 C260,226 460,226 460,326 C460,435 414,508 360,508 C306,508 260,435 260,326 Z" fill="url(#elenaSkin)" />
+    <!-- Soft hair sweep -->
+    <path d="M254,335 C258,238 338,220 375,244 C412,226 458,250 466,335 C440,275 395,258 350,262 C305,264 272,282 254,335 Z" fill="#8C735B" />
+    <!-- Serene expression -->
+    <path d="M298,340 Q320,331 342,339" stroke="#6E5846" stroke-width="2.4" fill="none" stroke-linecap="round" />
+    <path d="M378,339 Q400,331 422,340" stroke="#6E5846" stroke-width="2.4" fill="none" stroke-linecap="round" />
+    <circle cx="320" cy="362" r="4.5" fill="#3B322C" />
+    <circle cx="400" cy="362" r="4.5" fill="#3B322C" />
+    <path d="M360,366 L356,404 Q360,410 366,406" stroke="#CCAFA0" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M336,440 Q360,454 384,440" stroke="#C59B8C" stroke-width="2.6" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

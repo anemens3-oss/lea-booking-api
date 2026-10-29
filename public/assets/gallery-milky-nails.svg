@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgMilky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE8DF" />
+    </linearGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EAE3DA" />
+    </linearGradient>
+    <linearGradient id="handSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6EAE1" />
+      <stop offset="100%" stop-color="#E2CBB9" />
+    </linearGradient>
+    <linearGradient id="sheerNail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#FAF4EE" />
+      <stop offset="100%" stop-color="#EDE2D8" />
+    </linearGradient>
+    <filter id="softDrop" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#292724" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bgMilky)" />
+
+  <!-- Soft linen background folds -->
+  <path d="M0,660 Q280,610 540,660 T800,635 L800,1000 L0,1000 Z" fill="#F2ECE4" />
+
+  <!-- Warm porcelain teacup held gently -->
+  <g filter="url(#softDrop)">
+    <ellipse cx="400" cy="690" rx="220" ry="52" fill="#FAF8F5" stroke="#EAE6E1" stroke-width="1.5" />
+    <path d="M240,460 L560,460 C560,605 495,675 400,675 C305,675 240,605 240,460 Z" fill="url(#cupGrad)" stroke="#EAE6E1" stroke-width="1.5" />
+    <ellipse cx="400" cy="460" rx="160" ry="38" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <ellipse cx="400" cy="466" rx="138" ry="26" fill="#F2E8DC" />
+  </g>
+
+  <!-- Close-up fingers resting on porcelain rim with milky sheer manicure -->
+  <g filter="url(#softDrop)">
+    <!-- Finger 1 -->
+    <path d="M0,370 C110,390 215,425 310,465 C338,476 346,506 318,512 C240,518 125,490 0,465 Z" fill="url(#handSkin)" />
+    <g transform="translate(308, 488) rotate(14)">
+      <rect x="-24" y="-13" width="44" height="26" rx="13" fill="url(#sheerNail)" stroke="#E3D2C4" stroke-width="1" />
+      <path d="M-14,-7 Q2,-10 14,-5" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Finger 2 -->
+    <path d="M0,455 C125,480 245,515 348,548 C376,558 378,588 346,594 C252,598 130,568 0,542 Z" fill="url(#handSkin)" />
+    <g transform="translate(342, 570) rotate(12)">
+      <rect x="-25" y="-13.5" width="46" height="27" rx="13.5" fill="url(#sheerNail)" stroke="#E3D2C4" stroke-width="1" />
+      <path d="M-15,-7 Q2,-10 15,-5" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Finger 3 -->
+    <path d="M0,538 C110,562 215,592 312,620 C336,628 338,655 310,660 C225,664 115,636 0,612 Z" fill="url(#handSkin)" />
+    <g transform="translate(306, 639) rotate(11)">
+      <rect x="-22" y="-12" width="40" height="24" rx="12" fill="url(#sheerNail)" stroke="#E3D2C4" stroke-width="1" />
+      <path d="M-12,-6 Q2,-9 12,-4" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

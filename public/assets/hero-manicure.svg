@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="wallLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="52%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE9E1" />
+    </linearGradient>
+    <linearGradient id="sunbeam" x1="0%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#FAF8F5" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#E9DED4" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="linenSurface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F6F2EC" />
+      <stop offset="100%" stop-color="#EAE2D8" />
+    </linearGradient>
+    <linearGradient id="skinTone" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#F7ECE4" />
+      <stop offset="55%" stop-color="#EAD8CB" />
+      <stop offset="100%" stop-color="#DEC6B6" />
+    </linearGradient>
+    <linearGradient id="skinToneSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4E6DC" />
+      <stop offset="100%" stop-color="#E2CCB9" />
+    </linearGradient>
+    <linearGradient id="milkyNail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#FAF5F0" />
+      <stop offset="100%" stop-color="#EFE5DC" />
+    </linearGradient>
+    <linearGradient id="travertine" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FBF9F6" />
+      <stop offset="50%" stop-color="#F0EAE1" />
+      <stop offset="100%" stop-color="#E3D9CC" />
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+    <filter id="windowBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+  </defs>
+
+  <!-- Warm studio daylight backdrop -->
+  <rect width="1200" height="900" fill="url(#wallLight)" />
+
+  <!-- Architectural morning window shadow & light rays -->
+  <g filter="url(#windowBlur)">
+    <polygon points="0,0 740,0 1080,900 180,900" fill="url(#sunbeam)" />
+    <polygon points="620,0 670,0 990,900 940,900" fill="#E4DCD2" opacity="0.45" />
+    <polygon points="0,390 1200,530 1200,570 0,430" fill="#E4DCD2" opacity="0.35" />
+  </g>
+
+  <!-- Soft draped linen table surface -->
+  <path d="M0,520 Q360,485 720,515 T1200,490 L1200,900 L0,900 Z" fill="url(#linenSurface)" />
+  <path d="M0,580 Q420,545 860,590 T1200,565 L1200,900 L0,900 Z" fill="#EFEAE2" opacity="0.65" />
+
+  <!-- Travertine stone pedestal on left -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="340" cy="640" rx="210" ry="68" fill="#DFD5C8" />
+    <path d="M130,605 C130,568 550,568 550,605 L550,640 C550,678 130,678 130,640 Z" fill="url(#travertine)" />
+    <ellipse cx="340" cy="605" rx="210" ry="64" fill="#FAF8F5" stroke="#EAE6E1" stroke-width="1.5" />
+    <!-- Subtle travertine mineral veins -->
+    <path d="M210,595 Q290,605 370,592" stroke="#E5DDD3" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M270,622 Q360,630 455,612" stroke="#E9E1D8" stroke-width="1.5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Minimalist frosted glass serum bottle & ceramic cup on right -->
+  <g filter="url(#softShadow)">
+    <rect x="820" y="340" width="96" height="220" rx="48" fill="#FAF8F5" stroke="#EAE6E1" stroke-width="1.5" />
+    <rect x="852" y="295" width="32" height="50" rx="8" fill="#E9DED4" />
+    <ellipse cx="868" cy="285" rx="18" ry="22" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <rect x="836" y="405" width="64" height="90" rx="4" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1" />
+    <line x1="850" y1="438" x2="886" y2="438" stroke="#827D76" stroke-width="1.5" />
+    <line x1="856" y1="454" x2="880" y2="454" stroke="#CBC4BC" stroke-width="1.2" />
+  </g>
+
+  <!-- Graceful resting female hand & fingers with sheer milky manicure -->
+  <g filter="url(#softShadow)">
+    <!-- Forearm / wrist entering from top-right -->
+    <path d="M1200,260 C1040,305 910,365 785,435 C715,475 650,502 585,532 C540,552 490,572 472,592 C458,608 474,625 508,618 C555,608 615,582 668,566 C612,594 548,622 492,642 C464,652 475,674 510,668 C565,658 632,630 692,605 C642,632 584,658 538,676 C512,686 524,706 558,698 C616,685 688,652 752,618 C718,642 675,668 636,685 C614,695 626,712 656,704 C725,685 815,634 895,585 C985,530 1095,480 1200,450 Z" fill="url(#skinTone)" />
+
+    <!-- Subtle finger contour lines for depth -->
+    <path d="M668,566 C710,548 752,528 790,510" stroke="#DFC7B6" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M692,605 C735,585 778,564 815,545" stroke="#DFC7B6" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M752,618 C788,600 825,580 855,562" stroke="#DFC7B6" stroke-width="1.8" fill="none" stroke-linecap="round" />
+
+    <!-- Milky oval manicured nails with soft specular gloss -->
+    <!-- Index nail -->
+    <g transform="translate(476, 598) rotate(-20)">
+      <rect x="-22" y="-11" width="38" height="22" rx="11" fill="url(#milkyNail)" stroke="#E5D5C8" stroke-width="1" />
+      <path d="M-14,-6 Q0,-9 10,-5" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" />
+    </g>
+    <!-- Middle nail -->
+    <g transform="translate(495, 650) rotate(-18)">
+      <rect x="-24" y="-11.5" width="40" height="23" rx="11.5" fill="url(#milkyNail)" stroke="#E5D5C8" stroke-width="1" />
+      <path d="M-15,-6 Q0,-9 11,-5" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" />
+    </g>
+    <!-- Ring nail -->
+    <g transform="translate(538, 684) rotate(-17)">
+      <rect x="-21" y="-10.5" width="36" height="21" rx="10.5" fill="url(#milkyNail)" stroke="#E5D5C8" stroke-width="1" />
+      <path d="M-13,-5 Q0,-8 9,-4" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    </g>
+    <!-- Little finger nail -->
+    <g transform="translate(634, 693) rotate(-16)">
+      <rect x="-17" y="-9" width="30" height="18" rx="9" fill="url(#milkyNail)" stroke="#E5D5C8" stroke-width="1" />
+      <path d="M-10,-4 Q0,-7 7,-3" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Delicate white botanical stem in foreground left -->
+  <g opacity="0.92" filter="url(#softShadow)">
+    <path d="M180,900 Q235,690 315,510 Q355,420 410,340" stroke="#9E968E" stroke-width="2.2" fill="none" stroke-linecap="round" />
+    <path d="M265,630 Q220,585 195,535" stroke="#9E968E" stroke-width="1.6" fill="none" stroke-linecap="round" />
+    <path d="M315,510 Q365,485 405,465" stroke="#9E968E" stroke-width="1.6" fill="none" stroke-linecap="round" />
+    <!-- White dried lunaria / cotton petals -->
+    <ellipse cx="415" cy="332" rx="28" ry="38" transform="rotate(24 415 332)" fill="#FFFFFF" fill-opacity="0.92" stroke="#EAE6E1" stroke-width="1.2" />
+    <ellipse cx="190" cy="524" rx="25" ry="34" transform="rotate(-28 190 524)" fill="#FFFFFF" fill-opacity="0.9" stroke="#EAE6E1" stroke-width="1.2" />
+    <ellipse cx="416" cy="460" rx="26" ry="35" transform="rotate(38 416 460)" fill="#FAF8F5" fill-opacity="0.92" stroke="#EAE6E1" stroke-width="1.2" />
+    <ellipse cx="322" cy="410" rx="22" ry="32" transform="rotate(-15 322 410)" fill="#FFFFFF" fill-opacity="0.94" stroke="#EAE6E1" stroke-width="1.2" />
+  </g>
+</svg>

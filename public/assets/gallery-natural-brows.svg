@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720">
+  <defs>
+    <linearGradient id="browBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE9E0" />
+    </linearGradient>
+    <linearGradient id="portraitSkin" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#F9EFE8" />
+      <stop offset="55%" stop-color="#EDDCD0" />
+      <stop offset="100%" stop-color="#DFC8B8" />
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="960" height="720" fill="url(#browBg)" />
+
+  <!-- Soft window highlight circle -->
+  <circle cx="720" cy="180" r="260" fill="#FFFFFF" opacity="0.8" />
+
+  <!-- Editorial close-up composition of natural brow architecture & serene eye -->
+  <g filter="url(#softGlow)">
+    <rect x="140" y="90" width="680" height="540" rx="16" fill="url(#portraitSkin)" />
+    <!-- Subtle cheek highlight -->
+    <ellipse cx="490" cy="490" rx="220" ry="110" fill="#FFFDFB" opacity="0.35" />
+
+    <!-- Natural feathery eyebrow strokes (editorial close-up) -->
+    <g stroke="#5C4E44" stroke-linecap="round" fill="none">
+      <!-- Base soft brow shadow -->
+      <path d="M250,305 Q410,235 615,285 Q665,300 695,322" stroke="#8C7A6B" stroke-width="26" opacity="0.18" />
+      <!-- Individual natural feathery hair strokes -->
+      <path d="M255,320 Q262,290 275,274" stroke-width="2.4" opacity="0.75" />
+      <path d="M270,318 Q280,285 296,268" stroke-width="2.5" opacity="0.82" />
+      <path d="M286,315 Q298,280 318,262" stroke-width="2.6" opacity="0.85" />
+      <path d="M304,310 Q320,274 342,256" stroke-width="2.6" opacity="0.88" />
+      <path d="M324,305 Q342,268 368,252" stroke-width="2.6" opacity="0.9" />
+      <path d="M345,300 Q366,264 396,249" stroke-width="2.6" opacity="0.9" />
+      <path d="M368,295 Q392,260 425,247" stroke-width="2.6" opacity="0.92" />
+      <path d="M392,291 Q420,258 455,247" stroke-width="2.5" opacity="0.92" />
+      <path d="M418,288 Q448,258 486,250" stroke-width="2.5" opacity="0.9" />
+      <path d="M445,286 Q478,260 518,255" stroke-width="2.4" opacity="0.88" />
+      <path d="M474,285 Q508,262 548,262" stroke-width="2.4" opacity="0.86" />
+      <path d="M504,286 Q538,266 578,270" stroke-width="2.3" opacity="0.84" />
+      <path d="M535,288 Q568,274 606,280" stroke-width="2.2" opacity="0.82" />
+      <path d="M566,292 Q598,282 634,292" stroke-width="2.1" opacity="0.78" />
+      <path d="M598,297 Q628,292 660,304" stroke-width="2.0" opacity="0.74" />
+      <path d="M630,304 Q656,302 684,316" stroke-width="1.8" opacity="0.68" />
+    </g>
+
+    <!-- Calm closed eyelid & natural lashes below -->
+    <path d="M290,415 Q455,365 620,410" stroke="#A68B77" stroke-width="2" fill="none" opacity="0.55" />
+    <path d="M305,442 Q455,485 605,436" stroke="#68584D" stroke-width="3.2" fill="none" stroke-linecap="round" />
+    <!-- Delicate natural eyelashes -->
+    <g stroke="#5C4E44" stroke-width="1.8" stroke-linecap="round" opacity="0.75">
+      <line x1="340" y1="452" x2="332" y2="472" />
+      <line x1="375" y1="459" x2="370" y2="482" />
+      <line x1="412" y1="464" x2="410" y2="488" />
+      <line x1="450" y1="466" x2="452" y2="490" />
+      <line x1="488" y1="464" x2="494" y2="488" />
+      <line x1="526" y1="459" x2="536" y2="482" />
+      <line x1="562" y1="451" x2="575" y2="472" />
+    </g>
+  </g>
+
+  <!-- Minimalist brow brush tool in foreground corner -->
+  <g transform="translate(650, 560) rotate(-25)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="240" height="12" rx="6" fill="#292724" />
+    <rect x="-42" y="2" width="42" height="8" rx="3" fill="#D5C7B8" />
+  </g>
+</svg>

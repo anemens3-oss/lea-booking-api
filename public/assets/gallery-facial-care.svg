@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720">
+  <defs>
+    <linearGradient id="spaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EFE9E1" />
+    </linearGradient>
+    <linearGradient id="ceramicBowl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EAE3DA" />
+    </linearGradient>
+    <linearGradient id="serumDrop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F7EFE6" />
+      <stop offset="100%" stop-color="#E9DED4" />
+    </linearGradient>
+    <filter id="spaShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="960" height="720" fill="url(#spaBg)" />
+
+  <!-- Soft folded white waffle spa towel -->
+  <g filter="url(#spaShadow)">
+    <rect x="110" y="390" width="480" height="170" rx="28" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <path d="M135,445 L565,445" stroke="#EFECE7" stroke-width="2" />
+    <path d="M135,500 L565,500" stroke="#EFECE7" stroke-width="2" />
+  </g>
+
+  <!-- Ceramic bowl with hydrating cream texture -->
+  <g filter="url(#spaShadow)">
+    <ellipse cx="350" cy="360" rx="145" ry="44" fill="#EAE3DA" />
+    <path d="M205,290 C205,400 495,400 495,290 Z" fill="url(#ceramicBowl)" stroke="#EAE6E1" stroke-width="1.5" />
+    <ellipse cx="350" cy="290" rx="145" ry="44" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <!-- Whipped hydrating mask swirl inside bowl -->
+    <path d="M250,290 Q310,262 365,288 T450,285" stroke="#EFE7DD" stroke-width="18" fill="none" stroke-linecap="round" />
+    <path d="M275,296 Q335,275 395,296" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Frosted glass dropper bottle and pipette -->
+  <g filter="url(#spaShadow)">
+    <rect x="640" y="210" width="140" height="330" rx="52" fill="#FAF8F5" stroke="#EAE6E1" stroke-width="1.5" />
+    <rect x="686" y="150" width="48" height="65" rx="10" fill="#E9DED4" />
+    <path d="M694,150 L694,105 C694,85 726,85 726,105 L726,150 Z" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1.5" />
+    <rect x="664" y="295" width="92" height="145" rx="6" fill="#FFFFFF" stroke="#EAE6E1" stroke-width="1" />
+    <text x="710" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#292724" letter-spacing="3">LÉA</text>
+    <line x1="686" y1="384" x2="734" y2="384" stroke="#EAE6E1" stroke-width="1.5" />
+    <text x="710" y="406" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#827D76" letter-spacing="2">HYDRATING CARE</text>
+  </g>
+
+  <!-- Translucent serum droplet on travertine coaster -->
+  <g filter="url(#spaShadow)">
+    <ellipse cx="550" cy="575" rx="95" ry="32" fill="#F2ECE4" stroke="#E5DDD3" stroke-width="1.5" />
+    <path d="M525,568 C525,552 575,552 575,568 C575,580 525,580 525,568 Z" fill="url(#serumDrop)" />
+    <ellipse cx="542" cy="563" rx="10" ry="4" fill="#FFFFFF" />
+  </g>
+</svg>

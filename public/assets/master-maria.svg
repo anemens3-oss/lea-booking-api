@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" width="720" height="900">
+  <defs>
+    <linearGradient id="mariaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#EDE6DC" />
+    </linearGradient>
+    <linearGradient id="mariaSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9EFE7" />
+      <stop offset="100%" stop-color="#E6D1C2" />
+    </linearGradient>
+    <filter id="mariaShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#292724" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="720" height="900" fill="url(#mariaBg)" />
+  <circle cx="180" cy="210" r="230" fill="#FFFFFF" opacity="0.85" />
+
+  <!-- Editorial studio portrait of Maria -->
+  <g filter="url(#mariaShadow)">
+    <!-- Low bun hair -->
+    <circle cx="360" cy="215" r="56" fill="#6E5846" />
+    <path d="M248,325 C242,195 478,195 472,325 Z" fill="#6E5846" />
+    <!-- Warm beige cotton top -->
+    <path d="M120,900 C132,680 220,592 360,592 C500,592 588,680 600,900 Z" fill="#EFE9E1" stroke="#E4DDD3" stroke-width="1.5" />
+    <!-- Neck -->
+    <rect x="322" y="475" width="76" height="135" rx="34" fill="url(#mariaSkin)" />
+    <!-- Face -->
+    <path d="M260,328 C260,228 460,228 460,328 C460,436 414,510 360,510 C306,510 260,436 260,328 Z" fill="url(#mariaSkin)" />
+    <!-- Hairline -->
+    <path d="M256,332 C265,248 335,232 360,245 C385,232 455,248 464,332 C442,278 400,262 360,262 C320,262 278,278 256,332 Z" fill="#6E5846" />
+    <!-- Expressive natural brows -->
+    <path d="M294,338 Q318,326 342,336" stroke="#5A4738" stroke-width="3.2" fill="none" stroke-linecap="round" />
+    <path d="M378,336 Q402,326 426,338" stroke="#5A4738" stroke-width="3.2" fill="none" stroke-linecap="round" />
+    <circle cx="318" cy="362" r="4.5" fill="#3B322C" />
+    <circle cx="402" cy="362" r="4.5" fill="#3B322C" />
+    <path d="M360,366 L357,405 Q360,411 366,407" stroke="#CCAFA0" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M335,440 Q360,455 385,440" stroke="#C59B8C" stroke-width="2.6" fill="none" stroke-linecap="round" />
+  </g>
+</svg>
